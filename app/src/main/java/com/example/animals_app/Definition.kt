@@ -11,5 +11,9 @@ class Definition:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDefinitionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val animal = intent.getParcelableExtra<Animal>("animal")
+        binding.defHeader.text = animal!!.name
+        binding.defImage.setImageResource(animal!!.image)
+        binding.defDescr.text = animal!!.description
     }
 }
