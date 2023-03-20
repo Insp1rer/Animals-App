@@ -1,1 +1,1 @@
-# Animals-App
+# Animals-Application
